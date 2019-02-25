@@ -18,12 +18,25 @@ Why use this instead of the provided LaTeX template?
 
 ### Initial Setup
 
+install with `devtools`
+
 ### Using the Template
+
+Render with: 
+- `bookdown::render_book('index.Rmd', huwiwidown::thesis_pdf(latex_engine = 'lualatex'))`
+
 
 ## Additional Details
 
 What's the layout of the files and what do you need to change?
 
+- `_bookdown.yml`: can override defaults in `rmd_files` to define list of
+  elements and order
+- `index.Rmd`
+- `01-intro.Rmd`
+
+
 ## Further Resources
 
 1. Chester Ismay's `thesisdown` package: [thesisdown](https://github.com/ismayc/thesisdown)
+2. Details from the HU WiWi: [thesis resources](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teaching/theses)
