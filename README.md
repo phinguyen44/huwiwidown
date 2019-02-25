@@ -29,16 +29,20 @@ R Code
 eliminates a lot of the manual formatting required to make a LaTeX table, same
 with labels and references
 
-test
+test\
 \
 \
 \
 
-ee
-&nbsp 
-&nbsp 
+// Creates 2 Lines that **can** be selected as text
+&nbsp;  
+&nbsp;
 
-test
+Eek
+</br></br>
+</br></br>
+</br></br>
+
 
 ## Usage
 
