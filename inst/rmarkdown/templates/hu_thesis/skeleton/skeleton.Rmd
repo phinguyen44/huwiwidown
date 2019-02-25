@@ -1,0 +1,23 @@
+---
+title: "HU Thesis"
+author: "<YOUR NAME HERE>"
+date: "<DATE HERE>"
+output: pdf_document
+---
+
+# Introduction {.unnumbered}
+
+Welcome to the thesis template. This template is based on (and in
+many places copied directly from) the HU Berlin School of Business and Economics
+LaTeX template, but hopefully it will provide a nicer interface for those that
+have never used TeX or LaTeX before. Using _R Markdown_ will also allow you to
+easily keep track of your analyses in **R** chunks of code, with the resulting
+plots and output included as well.
+
+**Why use it?**
+
+_R Markdown_ creates a simple and straightforward way to interface with the
+beauty of LaTeX.Packages have been written in **R** to work directly with LaTeX
+to produce nicely formatting tables and paragraphs. _R Markdown_ also allows you
+to read in your data, to analyze it and to visualize it using **R** functions,
+and also to provide the documentation and commentary on the results of your project.  Further, it allows for **R** results to be passed inline to the commentary of your results.
