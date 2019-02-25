@@ -1,23 +1,77 @@
 ---
-title: "HU Thesis"
-author: "<YOUR NAME HERE>"
-date: "<DATE HERE>"
-output: pdf_document
+# Primary thesis fields
+title: "Bachelor's/Master's Thesis Title"
+author: "Your Name Here"
+matriculation_number: "Matriculation Number Here"
+date: "Format: MMMM dd, yyyy"
+institute: "Humboldt-Universit\"at zu Berlin"
+chair1: "School of Business and Economics" 
+chair2: "Institute for Statistics and Econometrics" # Remove if not relevant
+chair3: "Chair of Econometrics"                     # Remove if not relevant
+advisor1: "Prof. Dr. Bernd Droge"
+advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
+program: "Master of Science in Statistics"
+abstract: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# Acknowledgments are optional. Feel free to comment out
+acknowledgments: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("00-acknowledgments.Rmd"), collapse = '\n  ')`
+bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
+lot: true
+lof: true
+# Optional YAML stuffs
+knit: "bookdown::render_book"
+output: 
+  thesisdown::thesis_gitbook:
+    latex_engine: lualatex
+space_between_paragraphs: true
+# header-includes:
+#  - \usepackage{amsmath, amssymb, amsfonts, amsthm}
 ---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of
+metadata used to produce the document.  Be careful with spacing in this header!
+If you'd like to include a comment that won't be produced in your resulting file
+enclose it in a block like this.
+-->
+
+<!--
+If you receive a duplicate label error after knitting, make sure to delete the
+index.Rmd file and then knit again.
+-->
+
+```{r include_packages, include = FALSE}
+# This chunk ensures that the `huwiwidown` package is installed and loaded. This
+# package includes the template files for the thesis.
+if (!require(devtools)) {
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+}
+if (!require(huwiwidown)) {
+  devtools::install_github("phister/huwiwidown")
+  library(huwiwidown)
+```
+
+<!-- 
+The {.unnumbered} option here means that the introduction will be "Chapter  0."
+You can also use {-} for no numbers on chapters. 
+-->
 
 # Introduction {.unnumbered}
 
-Welcome to the thesis template. This template is based on (and in
-many places copied directly from) the HU Berlin School of Business and Economics
-LaTeX template, but hopefully it will provide a nicer interface for those that
-have never used TeX or LaTeX before. Using _R Markdown_ will also allow you to
-easily keep track of your analyses in **R** chunks of code, with the resulting
-plots and output included as well.
+Welcome to the thesis template. This template is based on (and in many places 
+copied directly from) the HU Berlin School of Business and Economics LaTeX 
+template, but hopefully it will provide a nicer interface for those that have
+never used LaTeX before. Using _R Markdown_ will also allow you to easily keep
+track of your analyses in **R** chunks of code, with the resulting plots and
+output included as well.
 
-**Why use it?**
+## Why use it?
 
 _R Markdown_ creates a simple and straightforward way to interface with the
-beauty of LaTeX.Packages have been written in **R** to work directly with LaTeX
+beauty of LaTeX. Packages have been written in **R** to work directly with LaTeX
 to produce nicely formatting tables and paragraphs. _R Markdown_ also allows you
 to read in your data, to analyze it and to visualize it using **R** functions,
-and also to provide the documentation and commentary on the results of your project.  Further, it allows for **R** results to be passed inline to the commentary of your results.
+and also to provide the documentation and commentary on the results of your
+project. Further, it allows for **R** results to be passed inline to the
+commentary of your results.

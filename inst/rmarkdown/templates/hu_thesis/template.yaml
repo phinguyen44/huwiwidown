@@ -1,1 +1,3 @@
 name: HU Thesis
+description: Template for HU Berlin WiWi Thesis using R Markdown + bookdown,
+  based on HU Berlin WiWi's LaTeX template

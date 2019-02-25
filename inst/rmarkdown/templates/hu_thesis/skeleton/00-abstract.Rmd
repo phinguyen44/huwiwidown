@@ -1,0 +1,13 @@
+## Abstract {-}
+
+This is the template for a thesis at the Chair of Econometrics of
+Humboldt--Universit\"at zu Berlin. A popular approach to write a thesis or a
+paper is the IMRAD method (Introduction, Methods, Results and Discussion). This
+approach is not mandatory! You can find more information about formal
+requirements in the booklet `Hinweise zur Gestaltung der \"au\ss eren Form von
+Diplomarbeiten' which is available in the office of studies.
+
+The abstract should not be longer than a paragraph of around 10-15 lines (or
+about 150 words). The abstract should contain a concise description of the
+econometric/economic problem you analyze and of your results. This allows the
+busy reader to obtain quickly a clear idea of the thesis content.
