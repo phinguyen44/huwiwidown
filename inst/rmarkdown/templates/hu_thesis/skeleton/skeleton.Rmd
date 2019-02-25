@@ -12,10 +12,10 @@ advisor1: "Prof. Dr. Bernd Droge"
 advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
 program: "Master of Science in Statistics"
 abstract: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 # Acknowledgments are optional. Feel free to comment out
 acknowledgments: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("00-acknowledgments.Rmd"), collapse = '\n  ')`
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgments.Rmd"), collapse = '\n  ')`
 bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
 lot: true
 lof: true

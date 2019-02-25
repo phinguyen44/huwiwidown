@@ -47,9 +47,17 @@ What's the layout of the files and what do you need to change?
 
 - `_bookdown.yml`: can override defaults in `rmd_files` to define list of
   elements and order
-- `index.Rmd`
+- `index.Rmd`: needs to be created when opening template
 - `00-abstract.Rmd`
 - `01-intro.Rmd`
+
+bib/
+
+chapters/
+
+figures/
+
+data/
 
 
 ## Further Resources
