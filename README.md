@@ -1,4 +1,4 @@
-# huwiwidown <img src="Hu_Logo_small.png" align="right" style="width:128px"/>
+# huwiwidown <img src="Hu_Logo_small.png" align="right" width="128px"/>
 
 This project provides a handy template for writing a dissertation or Bachelor's/
 Master's Thesis at the Humboldt-Universit\"at zu Berlin School of Business and
