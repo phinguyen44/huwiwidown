@@ -1,0 +1,26 @@
+Package: huwiwidown
+Title: An RMarkdown thesis template for students at the Humboldt Universitaet zu
+  Berlin Wirtschaftswissenschaftlichen Fakultaet (School of Business and
+  Economics) using the `bookdown` package
+Version: 0.0.1
+Authors@R: person("Phi", "Nguyen", email = "phi.nguyen@outlook.com", 
+  role = c("aut", "cre"))
+Description: Using the bookdown package and LaTeX and Word thesis templates from
+  HU Berlin School of Business and Economics, this package aims to encourage
+  reproducible research using simple Markdown syntax while embedding all of the
+  R code to produce plots and analyses as well. Based on Chester Ismay's 
+  `thesisdown` package.
+Maintainer: Phi Nguyen <phi.nguyen@outlook.com>
+Depends: 
+  R (>= 3.5.1),
+  devtools,
+  dplyr,
+  ggplot2,
+  bookdown,
+  rmarkdown,
+  knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
+
