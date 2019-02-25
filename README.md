@@ -57,3 +57,7 @@ What's the layout of the files and what do you need to change?
 1. Chester Ismay's `thesisdown` package: [thesisdown](https://github.com/ismayc/thesisdown)
 2. Details from the HU WiWi: [thesis resources](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teaching/theses)
 3. Basic R Markdown syntax: [R Markdown](https://rmarkdown.rstudio.com/authoring_basics.html)
+
+## TO DO:
+
+1. Same thing for the presentation?

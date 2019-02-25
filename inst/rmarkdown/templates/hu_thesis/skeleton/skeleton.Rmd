@@ -22,7 +22,7 @@ lof: true
 # Optional YAML stuffs
 knit: "bookdown::render_book"
 output: 
-  thesisdown::thesis_gitbook:
+  thesisdown::thesis_pdf:
     latex_engine: lualatex
 space_between_paragraphs: true
 # header-includes:
