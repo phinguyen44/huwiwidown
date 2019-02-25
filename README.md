@@ -18,7 +18,7 @@ Why use this instead of the provided LaTeX template?
 
 ### Initial Setup
 
-### 
+### Using the Template
 
 ## Additional Details
 
