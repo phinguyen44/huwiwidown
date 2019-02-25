@@ -29,21 +29,6 @@ R Code
 eliminates a lot of the manual formatting required to make a LaTeX table, same
 with labels and references
 
-test\
-\
-\
-\
-
-// Creates 2 Lines that **can** be selected as text
-&nbsp;  
-&nbsp;
-
-Eek
-</br></br>
-</br></br>
-</br></br>
-
-
 ## Usage
 
 ### Initial Setup
@@ -63,6 +48,7 @@ What's the layout of the files and what do you need to change?
 - `_bookdown.yml`: can override defaults in `rmd_files` to define list of
   elements and order
 - `index.Rmd`
+- `00-abstract.Rmd`
 - `01-intro.Rmd`
 
 
