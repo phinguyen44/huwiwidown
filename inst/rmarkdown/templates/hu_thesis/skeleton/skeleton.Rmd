@@ -18,8 +18,8 @@ abstract: |
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
 # Add / remove optional elements
-acknowledgments: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgments.Rmd"), collapse = '\n  ')`
+acknowledgements: |  e
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
 abbreviations: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true
