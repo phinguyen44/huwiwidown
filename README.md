@@ -59,6 +59,9 @@ figure/
 
 data/
 
+The PDF file of your thesis will be deposited in the `_book/` directory.
+
+
 
 ## Further Resources
 

@@ -1,6 +1,7 @@
 ---
 # Primary thesis fields
 title: "Bachelor's/Master's Thesis Title"
+type: "Master's Thesis"
 author: "Your Name Here"
 matriculation_number: "Matriculation Number Here"
 date: "Format: MMMM dd, yyyy"
@@ -17,8 +18,8 @@ titlepage: |
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
-# Add / remove optional elements
-acknowledgements: |  e
+# Add / remove optional elements by commenting out
+acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
 abbreviations: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
@@ -62,7 +63,11 @@ The {.unnumbered} option here means that the introduction will be "Chapter  0."
 You can also use {-} for no numbers on chapters. 
 -->
 
-# Introduction {.unnumbered}
+<!-- 
+The $body$ starts here!
+-->
+
+# Introduction {-}
 
 Welcome to the thesis template. This template is based on (and in many places 
 copied directly from) the HU Berlin School of Business and Economics LaTeX 

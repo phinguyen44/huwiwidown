@@ -1,10 +1,12 @@
 \begin{center}
   
-  $title$ submitted \\\vspace{0.5cm}
+  {\Large{\bf \title}} \vspace{0.5cm}
+  
+  \type submitted \\\vspace{0.5cm}
   to \\\vspace{0.5cm}
   \textbf{$advisor1$} \\
   \textbf{$advisor2$} \\\vspace{0.5cm}
-  $institute$ \\
+  \institute \\
   $chair1$ \\\vspace{1cm}
   $if(chair2)$
 
