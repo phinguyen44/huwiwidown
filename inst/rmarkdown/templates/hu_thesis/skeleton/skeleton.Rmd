@@ -11,13 +11,16 @@ chair3: "Chair of Econometrics"                     # Remove if not relevant
 advisor1: "Prof. Dr. Bernd Droge"
 advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
 program: "Master of Science in Statistics"
+titlepage: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-titlepage.Rmd"), collapse = '\n  ')`
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
 # Add / remove optional elements
 acknowledgments: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgments.Rmd"), collapse = '\n  ')`
-loa: true
+abbreviations: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true
 lof: true
 # Optional YAML stuffs

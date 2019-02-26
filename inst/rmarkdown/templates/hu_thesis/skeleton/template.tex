@@ -83,22 +83,25 @@ $endfor$
 % --- frontmatter: Title page ---
 % -------------------------------
 \thispagestyle{empty}
-\input{titlepage}
+$titlepage$
 
 % ------------------------------------
 % --- frontmatter: Acknowledgement ---
 % ------------------------------------
-\newpage
+$if(acknowledgments)$
+  \newpage
+  $acknowledgments$
+$endif$
 \pagestyle{plain}
 \pagenumbering{roman}   % define page number in roman style
 \setcounter{page}{1}    % start page numbering
-\input{acknowledgement}
+
 
 % -----------------------------
 % --- frontmatter: Abstract ---
 % -----------------------------
 \newpage
-\input{abstract}
+$abstract$
 
 % -----------------------------
 % --- frontmatter: Contents ---
@@ -114,7 +117,7 @@ $if(loa)$
   \newpage
   \addcontentsline{toc}{section}{List of Abbreviations}
   \ohead[]{LIST OF ABBREVIATIONS}
-  \input{abbreviations} 
+  $abbreviations$
 $endif$
 
 % ----------------------------------------------------
@@ -159,19 +162,19 @@ $body$       % change rmd_files in `_bookdown.yml` files to determine order
 \bibliography{references}
 
 % figures (not mandatory)
-\newpage
-\input{app_figures}
+% \newpage
+% \input{app_figures}
 
 % tables (not mandatory)
-\newpage
-\input{app_tables}
+% \newpage
+% \input{app_tables}
 
 % --------------------------------------------
 % --- last page: Declaration of Authorship ---
 % --------------------------------------------
-\newpage
-\thispagestyle{empty}
-\input{authorship}
+% \newpage
+% \thispagestyle{empty}
+% \input{authorship}
 
 
 \end{document}
