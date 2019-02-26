@@ -1,0 +1,24 @@
+\begin{center}
+  
+  $title$ submitted \\\vspace{0.5cm}
+  to \\\vspace{0.5cm}
+  \textbf{$advisor1$} \\
+  \textbf{$advisor2$} \\\vspace{0.5cm}
+  $institute$ \\
+  $chair1$ \\\vspace{1cm}
+  $if(chair2)$
+
+  \includegraphics[width=0.35\textwidth]{HU_Logo_small.png}
+  
+  by \\\vspace{0.5cm}
+  \textbf{$author$} \\
+  ($matriculation_number$) \\
+  
+  \medskip
+  \medskip
+  in partial fulfillment of the requirements \\
+  for the degree of \\
+  \textbf{Master of Science in Statistics} \\\vspace{0.5cm}
+  Berlin, June 30, 2019
+  
+\end{center}

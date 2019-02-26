@@ -7,7 +7,7 @@ rmd_files: [
   "chapters/03-chap3.Rmd",
   "chapters/04-conclusion.Rmd",
   "chapters/97-appendix.Rmd"
-  "chapters/98-references.Rmd",
+  "chapters/98-literature.Rmd",
   "chapters/99-authorship.Rmd"
 ]
 download: ["thesis.pdf", "PDF"]]

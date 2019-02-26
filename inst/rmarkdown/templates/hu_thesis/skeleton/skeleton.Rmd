@@ -13,10 +13,11 @@ advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
 program: "Master of Science in Statistics"
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
-# Acknowledgments are optional. Feel free to comment out
+bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
+# Add / remove optional elements
 acknowledgments: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgments.Rmd"), collapse = '\n  ')`
-bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
+loa: true
 lot: true
 lof: true
 # Optional YAML stuffs
@@ -24,9 +25,8 @@ knit: "bookdown::render_book"
 output: 
   thesisdown::thesis_pdf:
     latex_engine: lualatex
-space_between_paragraphs: true
-# header-includes:
-#  - \usepackage{amsmath, amssymb, amsfonts, amsthm}
+# header-includes:     # if including additional latex packages
+#  - \usepackage{}    
 ---
 
 <!--
