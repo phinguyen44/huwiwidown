@@ -55,7 +55,7 @@ bib/
 
 chapters/
 
-figures/
+figure/
 
 data/
 
