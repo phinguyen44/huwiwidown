@@ -11,6 +11,7 @@ chair3: "Chair of Econometrics"                     # Remove if not relevant
 advisor1: "Prof. Dr. Bernd Droge"
 advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
 program: "Master of Science in Statistics"
+# Leave titlepage and abstract YAML frontmatter alone
 titlepage: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-titlepage.Rmd"), collapse = '\n  ')`
 abstract: |  
@@ -23,14 +24,13 @@ abbreviations: |
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true
 lof: true
-# Optional YAML stuffs
+# Additional YAML stuff. Only change if you know what you're doing
 knit: "bookdown::render_book"
 output: 
-  thesisdown::thesis_pdf:
+  huwiwidown::thesis_pdf:
     latex_engine: lualatex
 # header-includes:     # if including additional latex packages
-#  - \usepackage{}    
----
+#  - \usepackage{}  
 
 <!--
 Above is the YAML (YAML Ain't Markup Language) header that includes a lot of
@@ -53,6 +53,7 @@ if (!require(devtools)) {
 if (!require(huwiwidown)) {
   devtools::install_github("phister/huwiwidown")
   library(huwiwidown)
+}
 ```
 
 <!-- 
