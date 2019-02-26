@@ -31,6 +31,7 @@ output:
     latex_engine: lualatex
 # header-includes:     # if including additional latex packages
 #  - \usepackage{}  
+---
 
 <!--
 Above is the YAML (YAML Ain't Markup Language) header that includes a lot of
