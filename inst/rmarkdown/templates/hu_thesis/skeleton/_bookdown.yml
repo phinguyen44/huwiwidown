@@ -1,4 +1,6 @@
 book_filename: "thesis"
-chapter_name: "Chapter "
-rmd_files: ["index.Rmd", "chapters/01-chap1.Rmd"]
+chapter_name: "Section "
+rmd_files: ["index.Rmd", "chapters/01-sec1.Rmd"]
+output_dir: "thesis-output"
 download: ["thesis.pdf", "PDF"]
+delete_merged_file: true

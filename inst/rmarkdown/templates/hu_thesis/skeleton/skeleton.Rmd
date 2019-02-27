@@ -5,14 +5,14 @@ type: "Master's Thesis"
 author: "Your Name Here"
 matriculation_number: "Matriculation Number Here"
 date: "Format: MMMM dd, yyyy"
-institute: "Humboldt-Universit\"at zu Berlin"
-chair1: "School of Business and Economics" 
+university: "Humboldt-Universit\"at zu Berlin"
+institute: "School of Business and Economics" 
+chair: "Institute for Statistics and Econometrics"
 advisor1: "Prof. Dr. Bernd Droge"
 advisor2: "Prof. Dr. Christoph Breunig"            
 program: "Master of Science in Statistics"
 # Add / remove optional elements by commenting out
-chair2: "Institute for Statistics and Econometrics"     # Remove if not relevant
-chair3: "Chair of Econometrics"                         # Remove if not relevant
+chair2: "Chair of Econometrics"
 acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
 abbreviations: |  
@@ -56,8 +56,8 @@ if (!require(huwiwidown)) {
 ```
 
 <!-- 
-The {.unnumbered} option here means that the introduction will be "Chapter  0."
-You can also use {-} for no numbers on chapters. 
+The {.unnumbered} option here means that the introduction will be "Section  0."
+You can also use {-} for no numbers on section. 
 -->
 
 # Introduction {-}

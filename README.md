@@ -53,7 +53,7 @@ What's the layout of the files and what do you need to change?
 
 bib/
 
-chapters/
+sections/
 
 figure/
 

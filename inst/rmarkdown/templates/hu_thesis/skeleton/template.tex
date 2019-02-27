@@ -80,14 +80,39 @@ $endfor$
 % --- frontmatter: Title page ---
 % -------------------------------
 \thispagestyle{empty}
-$titlepage$
+\begin{center}
+  {\Large{\bf $title$}} \vspace{0.5cm}
+
+  $type$ submitted \\\vspace{0.5cm}
+  to \\\vspace{0.5cm}
+  \textbf{$advisor1$} \\
+  \textbf{$advisor2$} \\\vspace{0.5cm}
+  $university$ \\
+  $institute$ \\
+  $chair$ \\
+  $chair2$ \\\vspace{1cm}
+
+  \includegraphics[width=0.35\textwidth]{HU_Logo_small.png}
+  
+  by \\\vspace{0.5cm}
+  \textbf{$author$} \\
+  ($matriculation_number$) \\
+  
+  \medskip
+  \medskip
+  in partial fulfillment of the requirements \\
+  for the degree of \\
+  \textbf{$program$} \\\vspace{0.5cm}
+  $date$
+  
+\end{center}
 
 % ------------------------------------
 % --- frontmatter: Acknowledgement ---
 % ------------------------------------
 $if(acknowledgements)$
-  \newpage
-  $acknowledgements$
+\newpage
+$acknowledgements$
 $endif$
 \pagestyle{plain}
 \pagenumbering{roman}   % define page number in roman style
@@ -110,10 +135,10 @@ $abstract$
 % --- frontmatter: List of Abbreviations (not mandatory) ---
 % ----------------------------------------------------------
 $if(loa)$
-  \newpage
-  \addcontentsline{toc}{section}{List of Abbreviations}
-  \ohead[]{LIST OF ABBREVIATIONS}
-  $abbreviations$
+\newpage
+\addcontentsline{toc}{section}{List of Abbreviations}
+\ohead[]{LIST OF ABBREVIATIONS}
+$abbreviations$
 $endif$
 
 % ----------------------------------------------------
@@ -121,20 +146,20 @@ $endif$
 % ----------------------------------------------------
 % TODO: check if \addcontentsline{toc}{section}{List of Figures} is necessary
 $if(lof)$
-  \newpage
-  \addcontentsline{toc}{section}{List of Figures}
-  \ohead[]{\rightmark}
-  \listoffigures
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\ohead[]{\rightmark}
+\listoffigures
 $endif$
 
 % ---------------------------------------------------
 % --- frontmatter: List of Tables (not mandatory) ---
 % ---------------------------------------------------
 $if(lot)$
-  \newpage
-  \addcontentsline{toc}{section}{List of Tables}
-  \ohead[]{\rightmark}
-  \listoftables
+\newpage
+\addcontentsline{toc}{section}{List of Tables}
+\ohead[]{\rightmark}
+\listoftables
 $endif$
 
 % -------------------------------
