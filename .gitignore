@@ -11,3 +11,4 @@ inst/rmarkdown/templates/hu_thesis/skeleton/*.toc
 inst/rmarkdown/templates/hu_thesis/skeleton/*.fdb_latexmk
 inst/rmarkdown/templates/hu_thesis/skeleton/*.fls
 inst/rmarkdown/templates/hu_thesis/skeleton/*.synctex.gz
+inst/rmarkdown/templates/hu_thesis/skeleton/*.pdf
