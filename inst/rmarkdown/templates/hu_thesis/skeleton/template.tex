@@ -45,6 +45,7 @@
 $for(header-includes)$
   $header-includes$
 $endfor$
+
 % --------------------------------------
 % --------------------------------------
 % --------------------------------------
@@ -75,7 +76,6 @@ $endfor$
 % --------------------------------------
 
 \begin{document}
-
 % -------------------------------
 % --- frontmatter: Title page ---
 % -------------------------------
@@ -144,7 +144,7 @@ $endif$
 % ----------------------------------------------------
 % --- frontmatter: List of Figures (not mandatory) ---
 % ----------------------------------------------------
-% TODO: check if \addcontentsline{toc}{section}{List of Figures} is necessary
+% TODO: add hypertargets?
 $if(lof)$
 \newpage
 \addcontentsline{toc}{section}{List of Figures}
@@ -169,6 +169,8 @@ $endif$
 \pagestyle{plain}       
 \setcounter{page}{1}    % start page numbering anew
 \pagenumbering{arabic}  % page numbers in arabic style
+% \setcounter{secnumdepth}{1}
+% \setcounter{tocdepth}{3}
 
 $body$       % change rmd_files in `_bookdown.yml` files to determine order
 
