@@ -35,7 +35,7 @@ link-citations: true
 knit: "bookdown::render_book"
 output: 
   huwiwidown::thesis_pdf:
-    latex_engine: lualatex
+#    latex_engine: lualatex
 # header-includes:     # if including additional latex packages
 #  - \usepackage{}  
 ---
@@ -92,6 +92,4 @@ esulting plots and output included as well.
 
 TODO: fill this out
 
-<!-- 
-The $body$ starts here!
--->
+<!-- The $body$ starts here! -->
