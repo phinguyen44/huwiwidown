@@ -1,15 +1,15 @@
 # Method
 
-- How was the data analyzed ?
+* How was the data analyzed ?
 
-- Present the underlying economic model/theory and give reasons why it is
+* Present the underlying economic model/theory and give reasons why it is
   suitable to answer the given problem.
 
-- Present econometric/statistical estimation method and give reasons why it is
+* Present econometric/statistical estimation method and give reasons why it is
   suitable to answer the given problem.
 
-- Allows the reader to judge the validity of the study and its findings.
+* Allows the reader to judge the validity of the study and its findings.
 
-- Depending on the topic this section can also be split up into separate
+* Depending on the topic this section can also be split up into separate
   sections.
 

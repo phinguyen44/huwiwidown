@@ -1,6 +1,6 @@
 book_filename: "thesis"
 chapter_name: "Section "
-rmd_files: ["index.Rmd", "sections/01-section1.Rmd", "sections/02-section2.Rmd", "sections/03-section3.Rmd", "sections/04-section4.Rmd", "sections/04-section4.Rmd", "sections/97-references.Rmd"]
+rmd_files: ["index.Rmd", "sections/01-section1.Rmd", "sections/02-section2.Rmd", "sections/03-section3.Rmd", "sections/04-section4.Rmd", "sections/05-section5.Rmd", "sections/97-references.Rmd"]
 output_dir: "thesis-output"
 download: ["thesis.pdf", "PDF"]
 delete_merged_file: true

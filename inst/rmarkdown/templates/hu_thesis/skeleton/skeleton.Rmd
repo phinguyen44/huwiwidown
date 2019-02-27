@@ -1,7 +1,7 @@
 ---
 #
 # Required Information --------------------------------------------------------
-#
+# change lines 5 - 15
 title: "Bachelor's/Master's Thesis Title"
 type: "Master's Thesis"
 author: "Your Name Here"
@@ -15,33 +15,34 @@ advisor2: "Prof. Dr. Christoph Breunig"
 program: "Master of Science in Statistics"
 #
 # Optional Information --------------------------------------------------------
-# 
 # comment out if unnecessary
 chair2: "Chair of Econometrics"
 acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
+# list of abbreviations
 loa: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
-lot: true
-lof: true
-space_between_paragraphs: true # If you want spaces between paragraphs
-# Additional YAML stuff. Only change if you know what you're doing
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`       
+lot: true                              # list of tables
+lof: true                              # list of figures
+link-citations: true
+bibliography: bib/references.bib       # bibliography file
+#
+# DO NOT CHANGE LINES 32 - 37 --------------------------------------
+# 
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 appendix: |  
   `r if(knitr:::is_latex_output()) paste(readLines("sections/98-appendix.Rmd"), collapse = '\n  ')`
 authorship: |  
   `r if(knitr:::is_latex_output()) paste(readLines("sections/99-authorship.Rmd"), collapse = '\n  ')`
-bibliography: bib/references.bib
-link-citations: true
 #
 # Rendering Options -----------------------------------------------------------
 #
 knit: "bookdown::render_book"
 output: 
-  huwiwidown::thesis_pdf:
-#    latex_engine: lualatex
-# header-includes:     # if including additional latex packages
+  huwiwidown::thesis_pdf
+space_between_paragraphs: true # if you want spaces between paragraphs
+# header-includes:     # if including additional latex packages or commands
 #  - \usepackage{}  
 ---
 
