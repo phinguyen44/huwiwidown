@@ -30,7 +30,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment   <- NA
-  base$knitr$opts_chunk$fig.align <- "center" # TODO: check if need to be commented
+  base$knitr$opts_chunk$fig.align <- "center"
 
   old_opt <- getOption("bookdown.post.latex")
   options(bookdown.post.latex = fix_envs)
@@ -38,8 +38,6 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 
   return(base)
 }
-
-# TODO: toc? tof? 
 
 fix_envs = function(x) {
   beg_reg <- '^\\s*\\\\begin\\{.*\\}'

@@ -20,7 +20,7 @@ program: "Master of Science in Statistics"
 chair2: "Chair of Econometrics"
 acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
-abbreviations: |  
+loa: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true
 lof: true
@@ -28,6 +28,9 @@ lof: true
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
 bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
+#
+# Rendering Options -----------------------------------------------------------
+#
 knit: "bookdown::render_book"
 output: 
   huwiwidown::thesis_pdf:
