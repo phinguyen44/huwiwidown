@@ -43,11 +43,10 @@
 % define second level for `itemizing'
 \renewcommand{\labelitemii}{-}
 
-% save thesis parameter for later
+% save thesis parameters for later
 \newcommand{\thesistype}{$type$}
 \newcommand{\thesisauthor}{$author$}
 \newcommand{\thesisdate}{$date$}
-
 
 % define tightlist to work with newer versions of pandoc
 \providecommand{\tightlist}{%
@@ -182,7 +181,20 @@ $body$
 
 % change rmd_files in `_bookdown.yml` files to determine order
 % note that references is also contained here.
-% appendix and and declaration of authorship are contained in another
-% tex file to ensure the follow the references.
+
+% appendix and and declaration of authorship are included below to ensure
+% they follow references.
+
+% ----------------
+% --- appendix ---
+% ----------------
+\newpage
+$appendix$
+
+% --------------------------------------------
+% --- last page: Declaration of Authorship ---
+% --------------------------------------------
+\newpage
+$authorship$
 
 \end{document}

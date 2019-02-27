@@ -7,7 +7,7 @@ type: "Master's Thesis"
 author: "Your Name Here"
 matriculation_number: "Matriculation Number Here"
 date: "MMMM dd, yyyy"
-university: "Humboldt-Universit\"at zu Berlin"
+university: "Humboldt-Universit\\"at zu Berlin"
 institute: "School of Business and Economics" 
 chair: "Institute for Statistics and Econometrics"
 advisor1: "Prof. Dr. Bernd Droge"
@@ -27,7 +27,11 @@ lof: true
 # Additional YAML stuff. Only change if you know what you're doing
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
-bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
+appendix: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("sections/98-appendix.Rmd"), collapse = '\n  ')`
+authorship: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("sections/99-authorship.Rmd"), collapse = '\n  ')`
+bibliography: bib/references.bib
 link-citations: true
 #
 # Rendering Options -----------------------------------------------------------
@@ -63,33 +67,3 @@ if (!require(huwiwidown)) {
   library(huwiwidown)
 }
 ```
-
-<!-- 
-The {.unnumbered} option here means that the introduction will be "Section  0."
-You can also use {-} for no numbers on section. 
--->
-
-# About this Thesis Template {-}
-
-Welcome to the thesis template. This template is based on (and in many places 
-copied directly from) the HU Berlin School of Business and Economics LaTeX 
-template, but hopefully it will provide a nicer interface for those that have
-never used LaTeX before. 
-
-## Why use R Markdown? {-}
-
-_R Markdown_ creates a simple and straightforward way to interface with the
-beauty of LaTeX. Packages have been written in **R** to work directly with LaTeX
-to produce nicely formatting tables and paragraphs. 
-
-_R Markdown_ also allows you to read in your data, to analyze it and to
-visualize it using **R** functions, and also to provide the documentation and
-commentary on the results of your project. Using _R Markdown_ will also allow
-you to easily keep track of your analyses in **R** chunks of code, with the 
-esulting plots and output included as well.
-
-# Thesis Structure {-}
-
-TODO: fill this out
-
-<!-- The $body$ starts here! -->
