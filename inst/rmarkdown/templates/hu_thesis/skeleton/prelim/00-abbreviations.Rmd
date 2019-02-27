@@ -1,4 +1,4 @@
-## List of Abbreviations {-}
+# List of Abbreviations {-}
 
 \begin{tabular}{rp{0.2cm}lp{1cm}rp{0.2cm}l}
     CPI     & &  Consumer Price Index   & & ETF     & &  Equity Traded Funds  \\

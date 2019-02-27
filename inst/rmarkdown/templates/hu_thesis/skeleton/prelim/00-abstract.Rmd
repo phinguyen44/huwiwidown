@@ -1,4 +1,4 @@
-## Abstract {-}
+# Abstract {-}
 
 This is the template for a thesis at the Chair of Econometrics of
 Humboldt--Universit\\"at zu Berlin. A popular approach to write a thesis or a
