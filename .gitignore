@@ -1,1 +1,13 @@
 .Rproj.user
+# Eliminate unneccesary output from template
+inst/rmarkdown/templates/hu_thesis/skeleton/*.aux
+inst/rmarkdown/templates/hu_thesis/skeleton/*.bbl
+inst/rmarkdown/templates/hu_thesis/skeleton/*.blg
+inst/rmarkdown/templates/hu_thesis/skeleton/*.lof
+inst/rmarkdown/templates/hu_thesis/skeleton/*.log
+inst/rmarkdown/templates/hu_thesis/skeleton/*.lot
+inst/rmarkdown/templates/hu_thesis/skeleton/*.out
+inst/rmarkdown/templates/hu_thesis/skeleton/*.toc
+inst/rmarkdown/templates/hu_thesis/skeleton/*.fdb_latexmk
+inst/rmarkdown/templates/hu_thesis/skeleton/*.fls
+inst/rmarkdown/templates/hu_thesis/skeleton/*.synctex.gz

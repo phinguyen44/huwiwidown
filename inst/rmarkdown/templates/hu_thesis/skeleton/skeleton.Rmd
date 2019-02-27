@@ -7,18 +7,12 @@ matriculation_number: "Matriculation Number Here"
 date: "Format: MMMM dd, yyyy"
 institute: "Humboldt-Universit\"at zu Berlin"
 chair1: "School of Business and Economics" 
-chair2: "Institute for Statistics and Econometrics" # Remove if not relevant
-chair3: "Chair of Econometrics"                     # Remove if not relevant
 advisor1: "Prof. Dr. Bernd Droge"
-advisor2: "Prof. Dr. Christoph Breunig"             # Remove if not relevant
+advisor2: "Prof. Dr. Christoph Breunig"            
 program: "Master of Science in Statistics"
-# Leave titlepage and abstract YAML frontmatter alone
-titlepage: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-titlepage.Rmd"), collapse = '\n  ')`
-abstract: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
-bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
 # Add / remove optional elements by commenting out
+chair2: "Institute for Statistics and Econometrics"     # Remove if not relevant
+chair3: "Chair of Econometrics"                         # Remove if not relevant
 acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
 abbreviations: |  
@@ -26,6 +20,9 @@ abbreviations: |
 lot: true
 lof: true
 # Additional YAML stuff. Only change if you know what you're doing
+abstract: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
+bibliography: bib/references.bib  # Useful tool: http://bibdesk.sourceforge.net/
 knit: "bookdown::render_book"
 output: 
   huwiwidown::thesis_pdf:
@@ -63,10 +60,6 @@ The {.unnumbered} option here means that the introduction will be "Chapter  0."
 You can also use {-} for no numbers on chapters. 
 -->
 
-<!-- 
-The $body$ starts here!
--->
-
 # Introduction {-}
 
 Welcome to the thesis template. This template is based on (and in many places 
@@ -85,3 +78,11 @@ to read in your data, to analyze it and to visualize it using **R** functions,
 and also to provide the documentation and commentary on the results of your
 project. Further, it allows for **R** results to be passed inline to the
 commentary of your results.
+
+# Thesis Structure {-}
+
+TODO: fill this out
+
+<!-- 
+The $body$ starts here!
+-->
