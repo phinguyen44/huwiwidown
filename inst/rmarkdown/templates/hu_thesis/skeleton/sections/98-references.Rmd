@@ -1,0 +1,21 @@
+<!--
+The bib chunk below must go last in this document according to how R Markdown
+renders. Unfortunately Pandoc does not have a way to specify where to put the 
+bibliographies. More info is at
+http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+-->
+
+# References
+
+<!--
+To remove the indentation of the first entry.
+-->
+\noindent
+
+<!--
+To create a hanging indent and spacing between entries.  These three lines may need to be removed for styles that don't require the hanging indent.
+-->
+
+\setlength{\parindent}{-0.20in}
+\setlength{\leftskip}{0.20in}
+\setlength{\parskip}{8pt}

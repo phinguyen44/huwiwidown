@@ -43,6 +43,10 @@
 % define second level for `itemizing'
 \renewcommand{\labelitemii}{-}
 
+% define tightlist to work with newer versions of pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 % To pass between YAML and LaTeX the dollar signs are added
 $for(header-includes)$
   $header-includes$
@@ -144,11 +148,10 @@ $endif$
 % ----------------------------------------------------
 % --- frontmatter: List of Figures (not mandatory) ---
 % ----------------------------------------------------
-% TODO: add hypertargets?
 $if(lof)$
 \newpage
-\addcontentsline{toc}{section}{List of Figures}
 \listoffigures
+\addcontentsline{toc}{section}{List of Figures}
 $endif$
 
 % ---------------------------------------------------
@@ -156,8 +159,9 @@ $endif$
 % ---------------------------------------------------
 $if(lot)$
 \newpage
-\addcontentsline{toc}{section}{List of Tables}
 \listoftables
+
+\addcontentsline{toc}{section}{List of Tables}
 $endif$
 
 % -------------------------------
@@ -168,32 +172,10 @@ $endif$
 \setcounter{page}{1}    % start page numbering anew
 \pagenumbering{arabic}  % page numbers in arabic style
 
-$body$       % change rmd_files in `_bookdown.yml` files to determine order
+$body$
 
-% ----------------
-% --- appendix ---
-% ----------------
-\appendix
-
-% literature
-\newpage
-\addcontentsline{toc}{section}{References}
-\bibliography{references}
-
-% figures (not mandatory)
-% \newpage
-% \input{app_figures}
-
-% tables (not mandatory)
-% \newpage
-% \input{app_tables}
-
-% --------------------------------------------
-% --- last page: Declaration of Authorship ---
-% --------------------------------------------
-% \newpage
-% \thispagestyle{empty}
-% \input{authorship}
-
+% change rmd_files in `_bookdown.yml` files to determine order
+% note that appendix, references, and declaration of authorship are contained
+% in the body
 
 \end{document}
