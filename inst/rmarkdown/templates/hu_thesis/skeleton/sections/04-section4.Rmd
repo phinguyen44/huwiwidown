@@ -40,7 +40,7 @@ knitr::include_graphics("figure/graph.eps")
   + Equations can be referenced with `\@ref(eq:<name>)`, where name is defined
     by adding `(\#eq:<name>)` in the line immediately before `\end{equation}`.
 
-\newpage
+## Review of Results
 
 *  Do the results support or do they contradict economic theory ?
 

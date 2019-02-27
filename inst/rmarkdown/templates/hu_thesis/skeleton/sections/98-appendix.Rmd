@@ -1,24 +1,13 @@
-`r if(knitr:::is_latex_output()) "\\appendix"`
+# Appendix {-}
 
-`r if(!knitr:::is_latex_output()) "# (APPENDIX) Appendix {-}"` # Appendix {-}
-<!--
-If you feel it necessary to include an appendix, it goes here.
--->
+Here goes the appendix!
 
-# The First Appendix
+## Figures {-}
 
-This first appendix includes all of the R chunks of code that were hidden throughout the document (using the `include = FALSE` chunk tag) to help with readibility and/or setup.
-
-**In the main Rmd file**
-
-```{r ref.label="include_packages", results="hide", echo = TRUE}
+```{r graph2, echo=FALSE, fig.cap="Estimated residuals (2) from model XXX. ...", out.width = "50%"}
+knitr::include_graphics("figure/graph.eps")
 ```
 
-**In Chapter \@ref(ref-labels):**
+## Tables {-}
 
-```{r ref.label="include_packages_2", results="hide", echo = TRUE}
-```
-
-# The Second Appendix, for Fun
-
-see if this works
+TBD
