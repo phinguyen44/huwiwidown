@@ -1,26 +1,28 @@
 # Data
 
-- Describe the data and its quality.
+* Describe the data and its quality.
 
-- How was the data sample selected?
+* How was the data sample selected?
 
-- Provide descriptive statistics such as:
+* Provide descriptive statistics such as:
 
-  - time period,
+  * time period,
 
-  - item number of observations, data frequency,
+  * item number of observations, data frequency,
 
-  - item mean, median,
+  * item mean, median,
 
-  - item min, max, standard deviation,
+  * item min, max, standard deviation,
 
-  - item skewness, kurtosis, Jarque--Bera statistic,
+  * item skewness, kurtosis, Jarque--Bera statistic,
 
-  - item time series plots, histogram.
+  * item time series plots, histogram.
 
-- For example:
+* For example:
 
 <!-- TODO: include R code for tables -->
 
-- Allows the reader to judge whether the sample is biased or to evaluate 
+* Allows the reader to judge whether the sample is biased or to evaluate 
   possible impacts of outliers, for example.
+
+\newpage

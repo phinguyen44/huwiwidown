@@ -19,6 +19,8 @@ program: "Master of Science in Statistics"
 chair2: "Chair of Econometrics"
 acknowledgements: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
+appendix: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("sections/98-appendix.Rmd"), collapse = '\n  ')`
 # list of abbreviations
 loa: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`       
@@ -27,12 +29,10 @@ lof: true                              # list of figures
 link-citations: true
 bibliography: bib/references.bib       # bibliography file
 #
-# DO NOT CHANGE LINES 32 - 37 --------------------------------------
+# DO NOT CHANGE LINES 34 - 37 -------------------------------------------------
 # 
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
-appendix: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("sections/98-appendix.Rmd"), collapse = '\n  ')`
 authorship: |  
   `r if(knitr:::is_latex_output()) paste(readLines("sections/99-authorship.Rmd"), collapse = '\n  ')`
 #

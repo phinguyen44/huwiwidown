@@ -51,3 +51,5 @@ knitr::include_graphics("figure/graph.eps")
 *  Provide robustness checks.
 
 *  Compare to previous research.
+
+\newpage
