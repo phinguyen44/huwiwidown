@@ -1,15 +1,15 @@
-# Introduction
+# Declaration of Authorship {-}
 
-- What is the subject of the study? Describe the economic/econometric problem.
-- What is the purpose of the study (working hypothesis)?
-- What do we already know about the subject (literature review)? Use citations:
-  @kuncheva2004combining shows that... Alternative Forms of the Wald test are
-  considered [@lingenfelser2011systematic].
-- What is the innovation of the study?
-- Provide an overview of your results.
-- Outline of the paper:\
-  _The paper is organized as follows. The next section describes the model
-  under investigation. Section "[About this Thesis Template]" describes the data set
-  and Section "[Why use R Markdown?]" presents the results. Finally, Section
-  \@ref(List of Tables) concludes._
-- The introduction should not be longer than 4 pages.
+I hereby confirm that I have authored this \thesistype independently and without
+use of others than the indicated sources. All passages which are literally or in
+general matter taken out of publications or other sources are marked as such.
+\vspace{1cm}
+
+Berlin, \thesisdate \vspace{0.5cm}
+
+
+
+
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+_\thesisauthor_ 

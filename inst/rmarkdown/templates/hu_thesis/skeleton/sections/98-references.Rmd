@@ -5,7 +5,7 @@ bibliographies. More info is at
 http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 -->
 
-# References
+# References {-}
 
 <!--
 To remove the indentation of the first entry.
