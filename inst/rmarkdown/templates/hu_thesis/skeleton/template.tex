@@ -36,6 +36,10 @@
 \evensidemargin3cm
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}   
+$if(space_between_paragraphs)$
+  %\setlength{\parskip}{\baselineskip}
+  \usepackage[parfill]{parskip}
+$endif$
 
 % define line spacing = 1.5
 \renewcommand{\baselinestretch}{1.5}

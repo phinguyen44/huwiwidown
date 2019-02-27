@@ -24,6 +24,7 @@ loa: |
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true
 lof: true
+space_between_paragraphs: true # If you want spaces between paragraphs
 # Additional YAML stuff. Only change if you know what you're doing
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
