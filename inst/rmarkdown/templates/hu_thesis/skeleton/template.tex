@@ -34,6 +34,8 @@
 \topmargin1cm
 \oddsidemargin3cm
 \evensidemargin3cm
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}   
 
 % define line spacing = 1.5
 \renewcommand{\baselinestretch}{1.5}
@@ -90,7 +92,7 @@ $endfor$
   $university$ \\
   $institute$ \\
   $chair$ \\
-  $chair2$ \\\vspace{1cm}
+  $if(chair2)$ $chair2$ \\ $endif$ \vspace{1cm}
 
   \includegraphics[width=0.35\textwidth]{HU_Logo_small.png}
   
@@ -169,8 +171,6 @@ $endif$
 \pagestyle{plain}       
 \setcounter{page}{1}    % start page numbering anew
 \pagenumbering{arabic}  % page numbers in arabic style
-% \setcounter{secnumdepth}{1}
-% \setcounter{tocdepth}{3}
 
 $body$       % change rmd_files in `_bookdown.yml` files to determine order
 
