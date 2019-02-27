@@ -10,6 +10,7 @@
 #' @param highlight Syntax highlighting style. Supported styles include
 #' "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn",
 #' and "haddock". Pass NULL to prevent syntax highlighting.
+#' @param ... Additional parameters to pass to `pdf_book()`.
 #' @return A modified \code{pdf_document} based on the HU Berlin School of
 #' Business and Economics LaTeX template.
 #' @examples

@@ -1,3 +1,5 @@
+\appendix
+
 # Appendix {-}
 
 Here goes the appendix!
@@ -11,3 +13,5 @@ knitr::include_graphics("figure/graph.eps")
 ## Tables {-}
 
 TBD
+
+\newpage

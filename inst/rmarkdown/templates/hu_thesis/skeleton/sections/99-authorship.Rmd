@@ -1,3 +1,6 @@
+\thispagestyle{empty}
+% TODO: Remove from TOC
+
 # Declaration of Authorship {-}
 
 I hereby confirm that I have authored this \thesistype{} independently and

@@ -150,9 +150,9 @@ $abstract$
 % ----------------------------------------------------------
 % --- frontmatter: List of Abbreviations (not mandatory) ---
 % ----------------------------------------------------------
-$if(loa)$
+$if(abbreviations)$
 \newpage
-$loa$
+$abbreviations$
 $endif$
 
 % ----------------------------------------------------
@@ -185,21 +185,7 @@ $endif$
 $body$
 
 % change rmd_files in `_bookdown.yml` files to determine order
-% note that references is also contained here.
-
-% appendix and and declaration of authorship are included below to ensure
-% they follow references.
-
-% ----------------
-% --- appendix ---
-% ----------------
-\newpage
-$appendix$
-
-% --------------------------------------------
-% --- last page: Declaration of Authorship ---
-% --------------------------------------------
-\newpage
-$authorship$
+% note that references, appendix, and declaration of authorship are also
+% contained here.
 
 \end{document}
