@@ -31,6 +31,8 @@ with labels and references
 
 Cool thing is you can still write in the files as LaTeX or markdown
 
+Tradeoff between expressiveness and simplicity
+
 ## Usage
 
 ### Initial Setup

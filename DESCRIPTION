@@ -18,7 +18,8 @@ Depends:
   ggplot2,
   bookdown,
   rmarkdown,
-  knitr
+  knitr,
+  kableExtra
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -37,6 +37,10 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
   base$knitr$opts_chunk$fig.pos    <- "H"
   base$knitr$opts_chunk$out.extra  <- ""
 
+  # For tables
+  options(knitr.table.format = "latex")
+
+
   old_opt <- getOption("bookdown.post.latex")
   options(bookdown.post.latex = fix_envs)
   on.exit(options(bookdown.post.late = old_opt))
