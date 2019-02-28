@@ -33,6 +33,10 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
   base$knitr$opts_chunk$comment   <- NA
   base$knitr$opts_chunk$fig.align <- "center"
 
+  # To ensure images are in correct place (in line with text)
+  base$knitr$opts_chunk$fig.pos    <- "H"
+  base$knitr$opts_chunk$out.extra  <- ""
+
   old_opt <- getOption("bookdown.post.latex")
   options(bookdown.post.latex = fix_envs)
   on.exit(options(bookdown.post.late = old_opt))
