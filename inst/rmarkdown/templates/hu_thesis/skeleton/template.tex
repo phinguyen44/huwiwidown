@@ -38,8 +38,10 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}   
 $if(space_between_paragraphs)$
-  \setlength{\parskip}{\baselineskip}
-  \usepackage[parfill]{parskip}
+  \setlength{\parskip}{1em}
+$endif$
+$if(no_indent)$
+  \setlength{\parindent}{0cm}
 $endif$
 
 % define line spacing = 1.5

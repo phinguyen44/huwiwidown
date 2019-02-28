@@ -49,11 +49,12 @@ What's the layout of the files and what do you need to change?
 
 - `_bookdown.yml`: can override defaults in `rmd_files` to define list of
   elements and order. Remember spacing is important!!
-- `index.Rmd`: needs to be created when opening template
+- `index.Rmd`: needs to be created when opening template. will help fill out
+  necessary fields in both Title page and Declaration of Authorship. The rest
+  is determined by you!
 - `00-abstract.Rmd`
 - `01-intro.Rmd`
 
-default in alphabetical order unless otherwise stated in the `_bookdown.yml`
 
 bib/
 

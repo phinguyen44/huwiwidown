@@ -33,7 +33,8 @@ bibliography: bib/references.bib       # bibliography file
 knit: "bookdown::render_book"
 output: 
   huwiwidown::thesis_pdf
-space_between_paragraphs: true # if you want spaces between paragraphs
+no_indent: true                      # if you want to remove paragraph indent
+space_between_paragraphs: true       # if you want spaces between paragraphs
 # header-includes:     # if including additional latex packages or commands
 #  - \usepackage{}  
 ---
