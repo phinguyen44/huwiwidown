@@ -2,8 +2,8 @@
 #
 # Required Information --------------------------------------------------------
 # change lines 5 - 15
-title: "Bachelor's/Master's Thesis Title"
-type: "Master's Thesis"
+title: "Thesis Title"
+type: "Bachelor's / Master's Thesis"
 author: "Your Name Here"
 matriculation_number: "Matriculation Number Here"
 date: "MMMM dd, yyyy"
@@ -19,10 +19,10 @@ program: "Master of Science in Statistics"
 chair2: "Chair of Econometrics"
 abstract: |  
   `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abstract.Rmd"), collapse = '\n  ')`
-acknowledgements: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledgements.Rmd"), collapse = '\n  ')`
+acknowledge: |  
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-acknowledge.Rmd"), collapse = '\n  ')`
 abbreviations: |  
-  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`       
+  `r if(knitr:::is_latex_output()) paste(readLines("prelim/00-abbreviations.Rmd"), collapse = '\n  ')`
 lot: true                              # list of tables
 lof: true                              # list of figures
 link-citations: true
@@ -67,14 +67,16 @@ The {.unnumbered} option here means that the introduction will be "Section  0."
 You can also use {-} for no numbers on section. 
 -->
 
+<!--
+The body of the thesis starts here. Feel free to delete everything below this.
+-->
+
 # About this Thesis Template {-}
 
 Welcome to the thesis template. This template is based on (and in many places 
 copied directly from) the HU Berlin School of Business and Economics LaTeX 
 template, but hopefully it will provide a nicer interface for those that have
 never used LaTeX before. 
-
-Delete this part when beginning to write your thesis.
 
 ## Why use R Markdown? {-}
 
@@ -87,5 +89,3 @@ visualize it using **R** functions, and also to provide the documentation and
 commentary on the results of your project. Using _R Markdown_ will also allow
 you to easily keep track of your analyses in **R** chunks of code, with the 
 resulting plots and output included as well.
-
-<!-- The $body$ starts here! -->

@@ -16,7 +16,7 @@
     name of the code chunk.
 
 ```{r graph, echo=FALSE, fig.cap="Estimated residuals from model XXX. ...", out.width = "50%"}
-knitr::include_graphics("figure/graph.eps")
+knitr::include_graphics("figures/graph.eps")
 ```
   + Tables and graphics may appear in the text or in the appendix, especially if
   there are many simulation results tabulated, but is also depends on the study

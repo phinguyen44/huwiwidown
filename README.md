@@ -29,6 +29,8 @@ R Code
 eliminates a lot of the manual formatting required to make a LaTeX table, same
 with labels and references
 
+Cool thing is you can still write in the files as LaTeX or markdown
+
 ## Usage
 
 ### Initial Setup
@@ -46,21 +48,27 @@ Render with:
 What's the layout of the files and what do you need to change?
 
 - `_bookdown.yml`: can override defaults in `rmd_files` to define list of
-  elements and order
+  elements and order. Remember spacing is important!!
 - `index.Rmd`: needs to be created when opening template
 - `00-abstract.Rmd`
 - `01-intro.Rmd`
 
+default in alphabetical order unless otherwise stated in the `_bookdown.yml`
+
 bib/
+
+Suggest to use [this website](http://bibdesk.sourceforge.net/)
 
 sections/
 
-figure/
+figures/
 
 data/
 
 The PDF file of your thesis will be deposited in the `_book/` directory.
 
+
+declaration of authorship autofilled out
 
 
 ## Further Resources
@@ -68,7 +76,3 @@ The PDF file of your thesis will be deposited in the `_book/` directory.
 1. Chester Ismay's `thesisdown` package: [thesisdown](https://github.com/ismayc/thesisdown)
 2. Details from the HU WiWi: [thesis resources](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teaching/theses)
 3. Basic R Markdown syntax: [R Markdown](https://rmarkdown.rstudio.com/authoring_basics.html)
-
-## TO DO:
-
-1. Same thing for the presentation?

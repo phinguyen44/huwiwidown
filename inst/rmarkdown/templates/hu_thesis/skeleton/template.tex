@@ -38,15 +38,12 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}   
 $if(space_between_paragraphs)$
-  %\setlength{\parskip}{\baselineskip}
+  \setlength{\parskip}{\baselineskip}
   \usepackage[parfill]{parskip}
 $endif$
 
 % define line spacing = 1.5
 \renewcommand{\baselinestretch}{1.5}
-
-% define second level for `itemizing'
-\renewcommand{\labelitemii}{-}
 
 % save thesis parameters for later
 \newcommand{\thesistype}{$type$}
@@ -126,9 +123,9 @@ $endfor$
 % ------------------------------------
 % --- frontmatter: Acknowledgement ---
 % ------------------------------------
-$if(acknowledgements)$
+$if(acknowledge)$
 \newpage
-$acknowledgements$
+$acknowledge$
 $endif$
 \pagestyle{plain}
 \pagenumbering{roman}   % define page number in roman style
@@ -170,7 +167,6 @@ $endif$
 $if(lot)$
 \newpage
 \listoftables
-
 \addcontentsline{toc}{section}{List of Tables}
 $endif$
 
@@ -185,7 +181,30 @@ $endif$
 $body$
 
 % change rmd_files in `_bookdown.yml` files to determine order
-% note that references, appendix, and declaration of authorship are also
-% contained here.
+% note that references and appendix are also contained here.
+
+% --------------------------------------------
+% --- last page: Declaration of Authorship ---
+% --------------------------------------------
+
+\newpage
+\thispagestyle{empty}
+\hypertarget{declaration-of-authorship}{%
+\section*{Declaration of Authorship}\label{declaration-of-authorship}}
+
+I hereby confirm that I have authored this \thesistype{} independently and
+without use of others than the indicated sources. All passages which are
+literally or in general matter taken out of publications or other sources are
+marked as such.
+\vspace{1cm}
+
+Berlin, \thesisdate{}
+\vspace{3cm}
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+\vspace{0.1cm}
+
+\thesisauthor{}
+
 
 \end{document}
