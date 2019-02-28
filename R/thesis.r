@@ -31,9 +31,9 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment   <- NA
-  base$knitr$opts_chunk$fig.align <- "center"
 
   # To ensure images are in correct place (in line with text)
+  base$knitr$opts_chunk$fig.align <- "center"
   base$knitr$opts_chunk$fig.pos    <- "H"
   base$knitr$opts_chunk$out.extra  <- ""
 
