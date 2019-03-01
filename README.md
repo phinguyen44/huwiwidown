@@ -35,7 +35,6 @@ pandoc output, but in general the appearance is almost entirely identical.
 ### Initial Setup
 
 1. To install the template, be sure you have the following:
-
   - [pandoc](http://pandoc.org/)
   - [LaTeX][(https://www.latex-project.org/get/)
   - [R >= 3.5.1](https://r-project.org)
