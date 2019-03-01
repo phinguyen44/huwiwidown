@@ -34,12 +34,12 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...) {
 
   # To ensure images are in correct place (in line with text)
   base$knitr$opts_chunk$fig.align <- "center"
-  base$knitr$opts_chunk$fig.pos    <- "H"
-  base$knitr$opts_chunk$out.extra  <- ""
+  # base$knitr$opts_chunk$fig.pos    <- "H"
+  # base$knitr$opts_chunk$out.extra  <- ""
 
   # For tables
   options(knitr.table.format = "latex")
-
+  options(kableExtra.latex.load_packages = FALSE)
 
   old_opt <- getOption("bookdown.post.latex")
   options(bookdown.post.latex = fix_envs)

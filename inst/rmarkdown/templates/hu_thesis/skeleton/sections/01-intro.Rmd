@@ -5,9 +5,9 @@
 * What is the purpose of the study (working hypothesis)?
 
 * What do we already know about the subject (literature review)? Use citations:
-  @kuncheva2004combining shows that... Alternative Forms of the Wald test are
-  considered [@lingenfelser2011systematic].
-
+  @lingenfelser2011systematic shows that... Alternative Forms of the Wald test are
+  considered [@kuncheva2004combining].
+  
 * What is the innovation of the study?
 
 * Provide an overview of your results.
@@ -18,5 +18,3 @@
   and Section "[Why use R Markdown?]" presents the results. Finally, Section
   \@ref(List of Tables) concludes._
 * The introduction should not be longer than 4 pages.
-
-\newpage

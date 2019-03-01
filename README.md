@@ -31,7 +31,8 @@ with labels and references
 
 Cool thing is you can still write in the files as LaTeX or markdown
 
-Tradeoff between expressiveness and simplicity
+Minor differences may exist ue to limitations in markdown, pandoc, etc.
+However, Tradeoff between expressiveness and simplicity
 
 ## Usage
 

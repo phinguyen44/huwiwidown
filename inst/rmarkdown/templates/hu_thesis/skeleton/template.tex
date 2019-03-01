@@ -11,7 +11,7 @@
 \usepackage[authoryear]{natbib}                 % literature reference style
 \usepackage[bf]{caption2}
 \usepackage{textcomp}                           % For single quotes
-\usepackage{float}                              % For images
+\usepackage{floatrow}                           % For image and table position
 \usepackage{booktabs}                           % For tables
 
 % -------------------------------
@@ -48,6 +48,12 @@ $endif$
 
 % define line spacing = 1.5
 \renewcommand{\baselinestretch}{1.5}
+
+% define position of graphics
+\floatsetup[figure]{capposition=bottom}
+\floatsetup[table]{capposition=bottom}
+\floatplacement{figure}{ht}
+\floatplacement{table}{ht}
 
 % save thesis parameters for later
 \newcommand{\thesistype}{$type$}

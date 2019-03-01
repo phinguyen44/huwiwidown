@@ -12,4 +12,3 @@
 
 * Suggest issues for future research.
 
-\newpage
