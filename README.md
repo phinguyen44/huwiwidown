@@ -28,7 +28,8 @@ good news is that users can still inject LaTeX code directly into the Markdown
 pages, in the event he/she still wants to write in LaTeX.
 
 This thesis will contain minor differences to the due to limitations in the
-pandoc output, but in general the appearance is almost entirely identical.
+pandoc output, but in general the appearance is almost entirely identical. An
+example of the output can be seen [here](thesis-example.pdf).
 
 ## Usage
 
@@ -54,7 +55,9 @@ File -> New File -> R Markdown... then choose 'From template', then choose
 'HU Thesis", and enter `index` as the **Name**. Note that this will currently
 only **Knit** if you name the directory `index` at this step.
 
-<img src="from_template.png" width="300px">
+<p align="center">
+  <img src="from_template.png" width="400px">
+</p>
 
 If you're not using RStudio, navigate to an empty directory and then run the
 following code:
