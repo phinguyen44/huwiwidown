@@ -40,10 +40,7 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}   
 $if(space_between_paragraphs)$
-  \setlength{\parskip}{1em}
-$endif$
-$if(no_indent)$
-  \setlength{\parindent}{0cm}
+\usepackage[parfill]{parskip} 
 $endif$
 
 % define line spacing = 1.5
@@ -64,7 +61,10 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% To pass between YAML and LaTeX the dollar signs are added
+% change spacing
+\setlength {\parskip}{1em}
+
+% Additional LaTeX parameters added in the YAML header of index.Rmd
 $for(header-includes)$
   $header-includes$
 $endfor$
