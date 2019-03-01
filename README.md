@@ -8,7 +8,7 @@ template found [here](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teachi
 Users write in `R Markdown` (which is basically a flavor of the `Markdown`
 markup language but with the ability to incorporate R code chunks using the
 `knitr` package), and the `bookdown` package (powered by
-[pandoc](https://pandoc.org) is used to convert the code into LaTeX code and
+[pandoc](https://pandoc.org) ) is used to convert the code into LaTeX code and
 finally into a PDF document. There's other formats that can be created too, such
 as html documents, but that is outside the scope of this package.
 
