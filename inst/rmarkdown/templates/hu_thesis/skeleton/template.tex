@@ -13,6 +13,7 @@
 \usepackage{textcomp}                           % For single quotes
 \usepackage{floatrow}                           % For image and table position
 \usepackage{booktabs}                           % For tables
+\usepackage[bottom]{footmisc}                   % For footnotes
 
 % -------------------------------
 % --- some layout definitions ---
@@ -40,7 +41,7 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}   
 $if(space_between_paragraphs)$
-\usepackage[parfill]{parskip} 
+  \usepackage[parfill]{parskip} 
 $endif$
 
 % define line spacing = 1.5

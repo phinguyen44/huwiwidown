@@ -32,10 +32,10 @@ bibliography: bib/references.bib       # bibliography file
 #
 knit: "bookdown::render_book"
 output: 
-  huwiwidown::thesis_pdf
-space_between_paragraphs: true       # if you want spaces bt paragraph and no indent
+  huwiwidown::thesis_pdf  
+space_between_paragraphs: true       # if you want spaces bt paragraph
 # header-includes:     # if including additional latex packages or commands
-#  - \usepackage{}  
+  # - \setlength{\parindent}{17pt}
 ---
 
 <!--
@@ -68,7 +68,8 @@ You can also use {-} for no numbers on section.
 -->
 
 <!--
-The body of the thesis starts here. Feel free to delete everything below this.
+The body of the thesis starts underneath the text below. Feel free to delete
+everything below this.
 -->
 
 # About this Thesis Template {-}

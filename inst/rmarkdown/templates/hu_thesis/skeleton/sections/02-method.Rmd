@@ -3,7 +3,7 @@
 * How was the data analyzed ?
 
 * Present the underlying economic model/theory and give reasons why it is
-  suitable to answer the given problem.
+  suitable to answer the given problem[^1].
 
 * Present econometric/statistical estimation method and give reasons why it is
   suitable to answer the given problem.
@@ -12,3 +12,5 @@
 
 * Depending on the topic this section can also be split up into separate
   sections.
+
+[^1]: Here is an example of a footnote.
