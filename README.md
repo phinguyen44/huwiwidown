@@ -35,13 +35,13 @@ pandoc output, but in general the appearance is almost entirely identical.
 ### Initial Setup
 
 1. To install the template, be sure you have the following:
-  - [pandoc](http://pandoc.org/)
-  - [LaTeX][(https://www.latex-project.org/get/)
-  - [R >= 3.5.1](https://r-project.org)
-  - [RStudio](https://rstudio.org) (optional, but it helps)
+    - [pandoc](http://pandoc.org/)
+    - [LaTeX](https://www.latex-project.org/get/)
+    - [R >= 3.5.1](https://r-project.org)
+    - [RStudio](https://rstudio.org) (optional, but it helps)
 2. Install the necessary packages:
 
-```
+```r
 if (!require("devtools")) {
   install.packages("devtools", repos = "http://cran.rstudio.org")
 }
@@ -54,7 +54,7 @@ File -> New File -> R Markdown... then choose 'From template', then choose
 'HU Thesis", and enter `index` as the **Name**. Note that this will currently
 only **Knit** if you name the directory `index` at this step.
 
-![](from_template.png)
+<img src="from_template.png" width="300px">
 
 If you're not using RStudio, navigate to an empty directory and then run the
 following code:
@@ -82,8 +82,8 @@ The following describes the components in the template.
 
 This file is first created when generating a new template. It contains all the
 relevant meta-information (e.g. name, thesis title, advisor names). You will
-need to fill out the sections at the top of the page, which will then auto-
-populate your "Title Page" and "Declaration of Authorship". If you are also
+need to fill out the sections at the top of the page, which will then
+auto-populate your "Title Page" and "Declaration of Authorship". If you are also
 familiar with the YAML header, you can also add additional LaTeX parameters or
 decide whether you want to add optional pages to your thesis such as the
 "Acknowledgements" section or the "List of Tables".
@@ -131,9 +131,9 @@ files in the template they correspond to:
 - acknowledgement (`prelim/00-acknowledge.Rmd`)
 - abstract (`prelim/00-abstract.Rmd`)
 - table of contents (mandatory, auto-generated from template)
-- list of abbreviations (not mandatory, (`prelim/00-abbreviations.Rmd`))
-- list of figures (not mandatory, auto-generated from template))
-- list of tables  (not mandatory, auto-generated from template))
+- list of abbreviations (not mandatory, `prelim/00-abbreviations.Rmd`)
+- list of figures (not mandatory, auto-generated from template)
+- list of tables  (not mandatory, auto-generated from template)
 
 **Body:** the structure of the thesis body is not mandatory, but the references
 are:
