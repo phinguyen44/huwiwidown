@@ -1,9 +1,10 @@
 # huwiwidown <img src="Hu_Logo_small.png" align="right" width="128px"/>
 
-This project provides a handy template for writing a dissertation or Bachelor's/
-Master's Thesis at the Humboldt-Universität zu Berlin School of Business and
-Economics and rendering those files in a PDF format following the Humboldt LaTeX
-template found [here](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teaching/theses/latex-thesis-template/view).
+The `huwiwidown` (pronounced "who-wee-wee-down") package provides a handy
+template for writing a dissertation or Bachelor's/ Master's Thesis at the
+Humboldt-Universität zu Berlin School of Business and Economics and rendering
+those files in a PDF format following the Humboldt LaTeX template found
+[here](https://www.wiwi.hu-berlin.de/de/professuren/vwl/oe/teaching/theses/latex-thesis-template/view).
 
 Users write in `R Markdown` (which is basically a flavor of the `Markdown`
 markup language but with the ability to incorporate R code chunks using the
