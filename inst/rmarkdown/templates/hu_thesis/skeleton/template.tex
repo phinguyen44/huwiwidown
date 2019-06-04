@@ -7,20 +7,23 @@
 
 \usepackage{amsmath,amssymb,amsfonts,amsthm}    % Typical maths resource packages
 \usepackage{graphicx}                           % Packages to allow inclusion of graphics
-\usepackage{hyperref}                           % For creating hyperlinks in cross references
 \usepackage[authoryear]{natbib}                 % literature reference style
-\usepackage[bf]{caption2}
+\usepackage[bf]{caption}
 \usepackage{textcomp}                           % For single quotes
 \usepackage{floatrow}                           % For image and table position
 \usepackage{booktabs}                           % For tables
-\usepackage[bottom]{footmisc}                   % For footnotes
+% \usepackage{hyperref}                           
+% \usepackage[bottom]{footmisc}                   
+\usepackage[hang, flushmargin]{footmisc}        % For footnotes
+\usepackage[colorlinks=true]{hyperref}          % For creating hyperlinks in cross references
+\usepackage{footnotebackref}
 
 % -------------------------------
 % --- some layout definitions ---
 % -------------------------------
 
 % define topline
-\usepackage[automark]{scrpage2}
+\usepackage[automark]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \automark{section}
 \clearscrheadings
